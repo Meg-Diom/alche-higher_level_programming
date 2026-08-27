@@ -4,6 +4,7 @@
 
 class Square:
     """Defining the class"""
+
     def __init__(self, size=0):
         """Catching errors"""
         self.__size = size
@@ -11,8 +12,8 @@ class Square:
     @property
     def size(self):
         return self.__size
-    @size.setter
 
+    @size.setter
     def size(self, value):
         if type(value) is not int:
             raise TypeError("size must be an integer")
