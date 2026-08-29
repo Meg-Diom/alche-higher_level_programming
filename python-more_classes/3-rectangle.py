@@ -50,7 +50,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-    rows = []
-    for i in range(self.__height):
-        rows.append("#" * self.__width)
-    return "\n".join(rows)
+        rows = []
+        for i in range(self.__height):
+            rows.append("#" * self.__width)
+        return "\n".join(rows)
