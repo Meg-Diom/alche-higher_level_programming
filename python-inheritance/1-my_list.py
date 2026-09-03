@@ -7,4 +7,5 @@ class MyList(list):
 
 
     def print_sorted(self):
+        """Defining the instance method"""
         print(sorted(self))
