@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Module Inintialization"""
-Rectangle = __init__('9-rectangle').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
@@ -18,4 +18,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """returning a square"""
-        return "[Square] {}/{}".format(self.__size' self.__size)
+        return "[Square] {}/{}".format(self.__size, self.__size)
