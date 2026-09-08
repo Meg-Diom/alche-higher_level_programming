@@ -1,8 +1,5 @@
 #!/usr/bin/python3
-"""
-This module containe a function that reads files when the file name 
-is passed as anargument to the function
-"""
+"""This module containe a function that reads files"""
 
 
 def read_file(filename=""):
