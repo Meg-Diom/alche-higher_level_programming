@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-"""Reading files in python"""
+"""
+This module containe a function that reads files when the file name is passed as an
+argument to the function
+"""
 
 
 def read_file(filename=""):
-    """Defining a function that takes a file nane as input and reads the file"""
+    """
+    Defining a function that takes a file nane as input and reads the file
+    """
     with open("filename", "r", encoding="utf-8") as file:
         print(file.read(), end=")
