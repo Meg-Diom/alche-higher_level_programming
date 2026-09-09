@@ -13,4 +13,4 @@ class Student:
 
     def to_json(self):
         """Defining an instant method"""
-        return obj.__dict__
+        return self.__dict__
