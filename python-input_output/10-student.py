@@ -14,9 +14,11 @@ class Student:
     def to_json(self, attrs=None):
         """definig instant methods"""
         if (isinstance(attrs, list) and
-                 all(isinstance(item, str) for item in attrs)):
+                all(isinstance(item, str) for item in attrs)):
             return {
-                key: self.__dict__[key] for key in attrs if key in self.__dict__}
+                key: self.__dict__[key]
+                for key in attrs
+                if key in self.__dict__}
         return self.__dict__.copy()
 
     def reload_from_json(self, json):
