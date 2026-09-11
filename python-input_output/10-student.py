@@ -11,10 +11,14 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_jjson(self, attrs=None):
+    def to_json(self, attrs=None):
         """definig instant methods"""
-        if isinstance(attrs, list) and all(isinstance(item,str) for item in attrs):
-            return {key: self.__dict__[key] for key in attrs if key in self.__dict__}
+        if isinstance(attrs, list) 
+        and all(isinstance(item, str) for item in attrs):
+            return {
+                key: self.__dict__[key] 
+                for key in attrs 
+                if key in self.__dict__}
         return self.__dict__.copy()
 
     def reload_from_json(self, json):
