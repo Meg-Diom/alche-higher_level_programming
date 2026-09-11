@@ -13,8 +13,8 @@ class Student:
 
     def to_json(self, attrs=None):
         """definig instant methods"""
-        if isinstance(attrs, list) 
-                and all(isinstance(item, str) for item in attrs):
+        if (isinstance(attrs, list) 
+                and all(isinstance(item, str) for item in attrs)):
             return {
                 key: self.__dict__[key] 
                 for key in attrs 
